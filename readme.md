@@ -2,7 +2,7 @@
 
 Projeto criado do zero para treinar as habilidades de HTML, CSS, Javascript e responsividade.
 
-[Projeto Online]()
+[Projeto Online](https://jokenpo-ten.vercel.app/)
 
 <img src="./img/preview.png" alt="preview">
 
