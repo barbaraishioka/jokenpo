@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(./img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 400px;
+  max-width: 90vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  text-align: center;
+  gap: 20px;
+  padding: 40px;
+  margin-block: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+h1 {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+main div:first-of-type {
+  flex-wrap: wrap;
+}
+
+main div:last-of-type {
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+button {
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 50px;
+}
+
+button:disabled {
+  cursor: inherit;
+}
+
+button:not(:disabled):hover {
+  opacity: 1;
+}
+
+button:not(:disabled):focus {
+  opacity: 1;
+}
+
+button:not(:disabled):active {
+  transform: translateY(10px);
+}
+
+button#pedra {
+  background-color: purple;
+}
+
+button#papel {
+  background-color: lawngreen;
+}
+
+button#tesoura {
+  background-color: lightseagreen;
+}
+
+p {
+  min-width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  white-space: nowrap;
+  word-wrap: break-word;
+  background-color: rgba(255, 69, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+p#result {
+  background-color: blueviolet;
+  white-space: initial;
+  word-wrap: initial;
+  display: none;
+}
+
+p#winner {
+  background-color: rgb(0, 140, 255);
+  white-space: initial;
+  word-wrap: initial;
+  display: none;
+}
+
+button#reload {
+  width: 120px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  background-color: green;
+  border-radius: 10px;
+}

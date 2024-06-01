@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JokenPô</title>
+  </head>
+  <body>
+    <main>
+      <h1>JokenPô</h1>
+      <div>
+        <button id="pedra" value="pedra" class="choiceButton">👊🏼</button>
+        <button id="papel" value="papel" class="choiceButton">🖐🏼</button>
+        <button id="tesoura" value="tesoura" class="choiceButton">✌🏻</button>
+      </div>
+      <div>
+        <p id="result"></p>
+        <p id="winner"></p>
+        <p>
+          Sua pontuação: <span id="human-score">0</span> /
+          <span class="max-score"></span>
+        </p>
+        <p>
+          Pontuação do Bot: <span id="machine-score">0</span> /
+          <span class="max-score"></span>
+        </p>
+        <button id="reload">Reiniciar</button>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
